@@ -2,7 +2,12 @@ group = "io.github.mikaojk"
 version = "1.0.0"
 
 plugins {
-    kotlin("jvm") version "2.1.0"
+    kotlin("jvm") version "2.1.20"
+    id("application")
+}
+
+application {
+    mainClass.set("io.github.mikaojk.MainKt")
 }
 
 repositories {
@@ -16,9 +21,6 @@ dependencies {
 tasks {
     withType<Test> {
         useJUnitPlatform {}
-    }
-    withType<Wrapper> {
-        gradleVersion = "8.12"
     }
 }
 

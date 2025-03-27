@@ -20,6 +20,12 @@ Run all the tests
 ./gradlew test
 ```
 
+### Run main method
+Run the main method
+```bash script
+./gradlew run
+```
+
 ### Upgrading the gradle wrapper
 Find the newest version of gradle here: https://gradle.org/releases/ Then run this command:
 (Remember to replace $gradleVersjon with the newest version, example: 8.12)
